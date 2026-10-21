@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Clima en Perú</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1>Clima Perú App</h1>
+        <p>Consulta el clima en tiempo real de las principales ciudades del Perú de forma automática.</p>
+    </header>
+
+    <main>
+        <section class="buscador">
+
+            <!-- Agrega un <select> con id="selectorCiudad".
+                 Debe tener al menos 6 ciudades del Perú como opciones.
+                 El value de cada option debe ser el nombre en minúsculas. -->
+            <select id="selectorCiudad">
+                <option value="" disabled selected>Selecciona una ciudad</option>
+                <option value="lima">Lima</option>
+                <option value="arequipa">Arequipa</option>
+                <option value="cusco">Cusco</option>
+                <option value="trujillo">Trujillo</option>
+                <option value="piura">Piura</option>
+                <option value="iquitos">Iquitos</option>
+            </select>
+
+            <!-- Agrega un <button> con id="btnConsultar" que diga "Ver clima" -->
+            <button id="btnConsultar">Ver clima</button>
+
+        </section>
+
+        <!-- Párrafo para mensajes de error.
+             Dale id="mensajeError" y clase "error" -->
+        <p id="mensajeError" class="error"></p>
+
+        <!-- Sección donde se inyectará la tarjeta de resultados.
+             Dale id="resultado" -->
+        <section id="resultado"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
